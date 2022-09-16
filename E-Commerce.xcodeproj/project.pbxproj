@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		EAB98CBD28D40F8F0010648E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB98CBC28D40F8F0010648E /* AppDelegate.swift */; };
 		EAB98CBF28D40F8F0010648E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB98CBE28D40F8F0010648E /* SceneDelegate.swift */; };
-		EAB98CC128D40F8F0010648E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB98CC028D40F8F0010648E /* ViewController.swift */; };
+		EAB98CC128D40F8F0010648E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB98CC028D40F8F0010648E /* LoginViewController.swift */; };
 		EAB98CC428D40F8F0010648E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB98CC228D40F8F0010648E /* Main.storyboard */; };
 		EAB98CC628D40F900010648E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB98CC528D40F900010648E /* Assets.xcassets */; };
 		EAB98CC928D40F900010648E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB98CC728D40F900010648E /* LaunchScreen.storyboard */; };
+		EAB98CD228D414670010648E /* ExUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB98CD128D414670010648E /* ExUIView.swift */; };
+		EAB98CD528D414760010648E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB98CD428D414760010648E /* CardView.swift */; };
+		EAB98CD728D418050010648E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB98CD628D418050010648E /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EAB98CB928D40F8F0010648E /* E-Commerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-Commerce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB98CBC28D40F8F0010648E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAB98CBE28D40F8F0010648E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EAB98CC028D40F8F0010648E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAB98CC028D40F8F0010648E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EAB98CC328D40F8F0010648E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAB98CC528D40F900010648E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAB98CC828D40F900010648E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAB98CCA28D40F900010648E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB98CD128D414670010648E /* ExUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExUIView.swift; sourceTree = "<group>"; };
+		EAB98CD428D414760010648E /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		EAB98CD628D418050010648E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		EAB98CBB28D40F8F0010648E /* E-Commerce */ = {
 			isa = PBXGroup;
 			children = (
-				EAB98CBC28D40F8F0010648E /* AppDelegate.swift */,
-				EAB98CBE28D40F8F0010648E /* SceneDelegate.swift */,
-				EAB98CC028D40F8F0010648E /* ViewController.swift */,
+				EAB98CD928D418150010648E /* Resources */,
+				EAB98CD328D414760010648E /* Classes */,
+				EAB98CD028D414670010648E /* Extension */,
+				EAB98CD828D4180A0010648E /* Screens */,
 				EAB98CC228D40F8F0010648E /* Main.storyboard */,
 				EAB98CC528D40F900010648E /* Assets.xcassets */,
 				EAB98CC728D40F900010648E /* LaunchScreen.storyboard */,
 				EAB98CCA28D40F900010648E /* Info.plist */,
 			);
 			path = "E-Commerce";
+			sourceTree = "<group>";
+		};
+		EAB98CD028D414670010648E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EAB98CD128D414670010648E /* ExUIView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EAB98CD328D414760010648E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EAB98CD428D414760010648E /* CardView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EAB98CD828D4180A0010648E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				EAB98CC028D40F8F0010648E /* LoginViewController.swift */,
+				EAB98CD628D418050010648E /* SignUpViewController.swift */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		EAB98CD928D418150010648E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAB98CBC28D40F8F0010648E /* AppDelegate.swift */,
+				EAB98CBE28D40F8F0010648E /* SceneDelegate.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAB98CC128D40F8F0010648E /* ViewController.swift in Sources */,
+				EAB98CD728D418050010648E /* SignUpViewController.swift in Sources */,
+				EAB98CC128D40F8F0010648E /* LoginViewController.swift in Sources */,
 				EAB98CBD28D40F8F0010648E /* AppDelegate.swift in Sources */,
 				EAB98CBF28D40F8F0010648E /* SceneDelegate.swift in Sources */,
+				EAB98CD228D414670010648E /* ExUIView.swift in Sources */,
+				EAB98CD528D414760010648E /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
